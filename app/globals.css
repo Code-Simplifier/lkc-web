@@ -24,4 +24,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  body::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded-lg;
+  }
 }
