@@ -51,7 +51,7 @@ const Navbar = () => {
         <Link href={"/"} className="hidden md:flex md:gap-x-4 md:items-center">
           <Image src={Logo} alt="logo" className="w-[40px] md:w-[80px] ml-4" />
           <div
-            className={`flex flex-col items-start text-xl text-transparent bg-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary ${secondary_bold.className}`}
+            className={`flex flex-col items-start text-lg text-transparent bg-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary ${secondary_bold.className}`}
           >
             <span>Lyallpur Khalsa College</span>
             <span>(Jalandhar)</span>
