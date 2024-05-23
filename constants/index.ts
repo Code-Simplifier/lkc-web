@@ -1,5 +1,3 @@
-
-
 export const navLinks = [
   {
     id: 0,
@@ -85,5 +83,3 @@ export const navLinks = [
     ],
   },
 ];
-
-
