@@ -67,7 +67,7 @@ const Navbar = () => {
             <li key={link.id}>
               <details>
                 <summary
-                  className={`capitalize text-lg ${primary_bold.className}`}
+                  className={`capitalize text-lg xl:text-base ${primary_bold.className}`}
                 >
                   {link.title}
                 </summary>
