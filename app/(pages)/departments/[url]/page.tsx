@@ -23,7 +23,7 @@ const DepartmentDetail = ({ params }: Props) => {
             .toLowerCase()
             .replaceAll(" ", "-")
             .replaceAll("&", "and") === params.url && (
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center" key={department.id}>
               <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-3">
                 <div className="flex text-justify px-10 text-lg">
                   {department.details.desc}
@@ -32,8 +32,8 @@ const DepartmentDetail = ({ params }: Props) => {
                   <p className={`text-2xl my-5 ${secondary.className}`}>
                     Courses
                   </p>
-                  {department.details.courses.map((course) => (
-                    <div className="bg-neutral rounded-md p-2 flex w-full justify-between">
+                  {department.details.courses.map((course, index) => (
+                    <div className="bg-neutral rounded-md p-2 flex w-full justify-between" key={index}>
                       <p>{course.title}</p>
                       <p>{course.duration} yrs</p>
                     </div>
